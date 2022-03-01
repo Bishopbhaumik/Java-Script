@@ -1,0 +1,10 @@
+var num=[4,9,16,25,36,100];
+var num1=[30,45,60,90,120,180];
+var x=num.map(Math.sqrt);
+var y=num.map(Math.exp);
+var z=num1.map(Math.sin);
+// var w=num.map(Math.LOG10E);
+console.log(x);
+console.log(y);
+console.log(z);
+// console.log(w);

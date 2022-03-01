@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>FORM
+        <div>DIV
+          <p>P</p>
+        </div>
+      </form>
+      <script>
+      const form = form // has form targetted
+      const div =div // has div targetted
+      const p = p// has p targetted
+      
+      p.addEventListener('click', function() {
+          console.log('p');
+      });
+      div.addEventListener('click', function(event) {
+          event.stopPropagation();
+          console.log('div');
+      });
+      form.addEventListener('click', function() {
+          console.log(form);
+      });
+      </script>
+</body>
+</html>

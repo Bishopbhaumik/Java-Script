@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bishop</title>
+</head>
+<body>
+  <div id="app">
+   <div class="box" id="first">1 </div>
+   <div class="box">2</div>
+   <div class="box">3</div>
+
+
+  </div>
+</body>
+<script>
+ const boc1=document.getElementsByClassName("box")[0];
+ //const boc2=document.getElementsByClassName("box")[1];
+ //const boc3=document.getElementsByClassName("box")[2];
+ // boc1.style.fontWeight = "bold";
+  //boc2.style.fontWeight = "bold";
+  //boc3.style.fontWeight = "bold";
+ // document.getElementById("first").style.color="blue";
+ // document.getElementById("app").style.border="2px solid orange";
+ // document.getElementById("app").style.borderRadius="5px";
+  //document.getElementById("app").style.height="500px";
+ // boc1.innerHTML="Hello I am Bishop";
+
+  const bis=document.getElementsByClassName("box");
+  [...bis].forEach((element)=>{
+   element.style.fontWeight = "bold";
+  });  
+  document.getElementById("first").style.color="blue";
+  document.getElementById("app").style.border="2px solid orange";
+  document.getElementById("app").style.borderRadius="5px";
+  document.getElementById("app").style.height="500px";
+  boc1.innerHTML="Hello I am Bishop";
+</script>
+</html>
